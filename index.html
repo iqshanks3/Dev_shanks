@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shanks — Cybersecurity Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Matrix Rain Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Scanlines Overlay -->
+  <div id="scanlines"></div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ── Navigation ───────────────────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        root@<span class="green">shanks</span>:~#
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">./about</a>
+        <span class="sep">|</span>
+        <a href="#skills">./skills</a>
+        <span class="sep">|</span>
+        <a href="#certs">./certs</a>
+        <span class="sep">|</span>
+        <a href="#contact">./contact</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">./about</a>
+      <a href="#skills">./skills</a>
+      <a href="#certs">./certs</a>
+      <a href="#contact">./contact</a>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ─────────────────────────────────────── -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="typewriter-line">
+        <span id="typewriter-text"></span><span class="cursor"></span>
+      </div>
+
+      <h1 class="glitch-name">shanks</h1>
+
+      <div class="hero-title">
+        Python Developer | Ethical Hacker | Cybersecurity Specialist
+      </div>
+
+      <div class="hero-status">
+        <div class="status-dot"></div>
+        <span>ONLINE — Available for work</span>
+      </div>
+
+      <div class="scroll-hint">
+        [ SCROLL DOWN TO INITIALIZE CONNECTION ]
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">~/about.txt</div>
+        </div>
+        <div class="terminal-body">
+          <div class="about-paras">
+            <p><span class="prompt">&gt; &gt;</span>shanks is a Python developer and cybersecurity specialist with expertise in ethical hacking, penetration testing, and secure code development.</p>
+            <p><span class="prompt">&gt; &gt;</span>Self-taught. Passionate about breaking systems to make them stronger. The digital frontier is a battlefield — and I build the shields.</p>
+            <p><span class="prompt">&gt; &gt;</span>Certified in Data Analysis with Python (freeCodeCamp, 2026). Currently exploring advanced offensive security and malware analysis.</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box" data-target="400" data-suffix="+">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">HOURS CERTIFIED</div>
+            </div>
+            <div class="stat-box" data-target="10" data-suffix="+">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">SKILLS MASTERED</div>
+            </div>
+            <div class="stat-box" data-target="1" data-suffix="+">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">CERTIFICATE</div>
+            </div>
+            <div class="stat-box" data-target="100" data-suffix="%">
+              <div class="stat-number">0%</div>
+              <div class="stat-label">COMMITMENT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">~/skills.sh</div>
+        </div>
+        <div class="terminal-body">
+          <div class="section-header">&gt; Executing skill matrix... [OK]</div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Python</span>
+              <span class="skill-level">[Expert] 95%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="95"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Ethical Hacking / Pentesting</span>
+              <span class="skill-level">[Advanced] 85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Network Security</span>
+              <span class="skill-level">[Advanced] 80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="80"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Linux / Kali Linux</span>
+              <span class="skill-level">[Advanced] 85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Web Security &amp; OWASP</span>
+              <span class="skill-level">[Intermediate] 70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">SQL Injection &amp; XSS Defense</span>
+              <span class="skill-level">[Intermediate] 75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="75"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Cryptography</span>
+              <span class="skill-level">[Intermediate] 65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="65"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Bash / Shell Scripting</span>
+              <span class="skill-level">[Intermediate] 70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="70"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">Reverse Engineering</span>
+              <span class="skill-level">[Beginner-Int] 40%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="40"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span class="skill-name">CTF Competitions</span>
+              <span class="skill-level">[Advanced] 85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-pct="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certs">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">~/cat /etc/certificates</div>
+        </div>
+        <div class="terminal-body">
+          <div class="section-header">&gt; Found 1 verified certificate record.</div>
+
+          <a class="cert-card"
+             href="https://www.freecodecamp.org/certification/shanks/data-analysis-with-python-v7"
+             target="_blank"
+             rel="noopener noreferrer">
+            <div class="cert-img-wrap">
+              <img src="cert.jpeg" alt="Data Analysis with Python Certificate" />
+              <div class="cert-tint"></div>
+            </div>
+            <div class="cert-info">
+              <span class="cert-badge">VERIFIED</span>
+              <span class="cert-name">Data Analysis with Python</span>
+              <span class="cert-issuer">Issuer: freeCodeCamp.org</span>
+              <span class="cert-date">Issued: June 11, 2026 | ~400 hours of coursework</span>
+              <span class="cert-verify">[ CLICK TO VERIFY CERTIFICATE ]</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">~/ping_nodes.sh</div>
+        </div>
+        <div class="terminal-body">
+          <div class="contact-header">
+            &gt; Awaiting connection... select a node to initiate handshake.
+          </div>
+
+          <div class="contact-icons">
+            <a class="contact-link"
+               href="https://www.instagram.com/iqshanks12?igsh=NnNjcnZ5MTB1dzM4"
+               target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+              <span>INSTAGRAM</span>
+            </a>
+            <a class="contact-link"
+               href="https://wa.me/447458200061"
+               target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              <span>WHATSAPP</span>
+            </a>
+            <a class="contact-link"
+               href="mailto:iqshanks3@gmail.com">
+              <i class="fas fa-envelope"></i>
+              <span>EMAIL</span>
+            </a>
+          </div>
+
+          <div class="connection-terminated">— CONNECTION TERMINATED —</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer>
+    <p>root@shanks:~# <span class="echo">echo</span> "Built with &lt;/&gt; and caffeine"</p>
+    <p>© 2026 shanks — All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
